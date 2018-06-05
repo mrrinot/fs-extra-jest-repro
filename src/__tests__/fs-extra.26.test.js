@@ -1,4 +1,4 @@
-const fs = require("fs-extra");
+const fs = require("graceful-fs");
 
 describe("Import fs", () => {
   it("should do typical stuff", () => {
