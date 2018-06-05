@@ -1,0 +1,23 @@
+{
+    "name": "sequelizejest",
+    "version": "1.0.0",
+    "description": "Testing jest with sequelize",
+    "main": "index.js",
+    "dependencies": {
+        "fs-extra": "^6.0.1"
+    },
+    "devDependencies": {
+        "jest": "^23.0.1"
+    },
+    "scripts": {
+        "test": "NODE_ENV=test node --expose-gc ./node_modules/jest/bin/jest.js --runInBand --logHeapUsage"
+    },
+    "jest": {
+        "verbose": false,
+        "setupTestFrameworkScriptFile": "<rootDir>/setupFramework.jest.js",
+        "testEnvironment": "node",
+        "testMatch": [
+            "**/!(node_modules)/**/__test?(s)__/**(spec|test).js"
+        ]
+    }
+}
